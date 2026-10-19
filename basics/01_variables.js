@@ -3,11 +3,12 @@ const account_id = 12
 // account_id = 4 
 console.log(account_id)
 
-
+// reassignment allowed redeclaration not allowed 
 let account_email = "jsray2711@gmail.com"
 account_email = "xyz@gmail.com"
 console.log(account_email);
 
+// reassignment and redeclaration allowed
 var password = "12345"
 password = "11111"
 
