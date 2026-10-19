@@ -1,1 +1,0 @@
-JavaScript originally ran primarily in browsers, but with the introduction of Node.js, it can also run outside browsers. Modern browsers still have JavaScript engines built in.
