@@ -29,5 +29,11 @@ console.log(z)
 
 // skip one value
 const [x1, ,z1] = fruits
-console.log(x1);
-console.log(z1);
+console.log(x1)
+console.log(z1)
+
+// json : synatx same like objects difference is that keys are written as strings
+// {
+//   "name" : "jyoti",
+//   "price" : 1000
+// }
