@@ -4,8 +4,6 @@ let res = document.querySelector('.results')
 calculate.addEventListener('click',()=>{
   let hgt = Number(document.querySelector('#hgt').value)
   let wgt = Number(document.querySelector('#wgt').value)
-  console.log(hgt)
-  console.log(wgt)
 
   if(hgt==='' || wgt==='' || hgt<0 || wgt<0 || isNaN(hgt) || isNaN(wgt)){
     alert('Enter valid height and weight values')
