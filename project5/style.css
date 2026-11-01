@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  color: white;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons button{
+  height: 30px;
+  width: 80px;
+  border-radius: 20px;
+  border: none;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
