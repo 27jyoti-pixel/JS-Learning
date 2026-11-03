@@ -1,3 +1,5 @@
+// async await concept is later below in same file
+
 let stop = document.querySelector('#stop')
 let start = document.querySelector('#start')
 // setTimeout(()=>{
