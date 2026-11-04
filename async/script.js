@@ -1,7 +1,7 @@
 // async await concept is later below in same file
 
-let stop = document.querySelector('#stop')
-let start = document.querySelector('#start')
+// let stop = document.querySelector('#stop')
+// let start = document.querySelector('#start')
 // setTimeout(()=>{
 //   console.log("hello")
 // },2000)
@@ -19,13 +19,29 @@ let start = document.querySelector('#start')
 //   console.log('Timeout was cleared')
 // })
 
-let st = ''
-start.addEventListener('click',()=>{
-  st = setInterval(()=>{
-    console.log("hi jyoti " + Date.now())
-  },2000)
+// let st = ''
+// start.addEventListener('click',()=>{
+//   st = setInterval(()=>{
+//     console.log("hi jyoti " + Date.now())
+//   },2000)
+// })
+
+// stop.addEventListener('click',()=>{
+//   clearInterval(st)
+// })
+
+const p5 = new Promise((res,rej)=>{
+  setTimeout(()=>{
+    let err = false;
+    if(!err){
+      res({user : 'jyoti' , pass : '123'})
+    }else{
+      rej('ERROR : JS went wrong')
+    }
+  },1000)
 })
 
-stop.addEventListener('click',()=>{
-  clearInterval(st)
-})
+async function promise(){
+  const res = await p5
+  console.log(res)
+}
