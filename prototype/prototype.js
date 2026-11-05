@@ -56,3 +56,23 @@ emp1.work()
 emp2.work()
 console.log(Object.getPrototypeOf(emp1))
 console.log(emp1.__proto__)
+
+studyMethod.greet = function(){
+  console.log('Hello moto ! ')
+}
+
+user.greet()
+
+// use of .prototype using constructor
+const Student = function (name,age){
+  this.name = name;
+  this.age = age;
+}
+
+const s1 = new Student('jyoti',21)
+console.log(s1.name)
+Student.prototype.greet = function(){
+  console.log('Hello moto')
+}
+
+s1.greet()
